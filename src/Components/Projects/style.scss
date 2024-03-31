@@ -1,0 +1,423 @@
+@import "../../Sass/mixinss.scss";
+
+.our-service-container {
+  background: url("../../assets/h-3.jpg") center/cover no-repeat;
+  height: 1150px;
+  padding: 116px 0px 92px 0px;
+}
+.services {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-flow: row;
+}
+.services-heading {
+  width: calc(100% / 3);
+  height: fit-content;
+  padding: 0px 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 130px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.span1 {
+  display: block;
+  color: #6777a1;
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 9px;
+}
+.span1::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  border-radius: 0 10px 10px 0;
+  background-color: #755efc;
+  transform: translate(3px, -1px);
+  margin-right: calc(0.5em + 6px);
+}
+.span2,
+.span3 {
+  display: inline-block;
+  color: #2c3c65;
+  font-size: 48px;
+  font-weight: 600;
+  transition: 0.4s ease-in-out;
+  text-decoration-thickness: 0.05em !important;
+  text-underline-offset: 0.1em;
+}
+.span3 {
+  background: -webkit-linear-gradient(
+    left,
+    rgba(117, 94, 252, 1),
+    rgba(117, 94, 252, 1),
+    rgb(180, 84, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.services-lists {
+  width: calc(100% - (100% / 3));
+}
+.texts {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.mg {
+  margin: 15px 0px 30px 5px;
+}
+.col-white {
+  color: white;
+}
+.fs-5 {
+  font-size: 5rem;
+}
+.groups {
+  display: flex;
+  flex-flow: column;
+}
+.groups .number {
+  color: #755efc;
+  margin-bottom: 5px;
+}
+.des {
+  border-top: 1px solid gray;
+  color: white;
+  padding: 30px 10px 30px 20px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.uiux {
+  font-size: 1.5rem;
+  width: 30%;
+  cursor: pointer;
+}
+.uiux:hover {
+  color: #755efc;
+}
+.group-des {
+  width: 60%;
+  line-height: 25px;
+}
+.des a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.des a::after{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0%;
+  height: 2px;
+  background-color: #755efc;
+  transition: all ease 1s;
+}
+.des a:hover::after{
+  width: 100%;
+}
+
+@media screen and (max-width: 1220px) {
+  #project {
+    height: 1060px;
+    .services {
+      width: 1050px;
+      .services-heading {
+        .texts {
+          .fs-5 {
+            font-size: 4rem;
+          }
+        }
+      }
+      .services-lists {
+        .groups {
+          .des {
+            padding: 25px 10px 25px 15px;
+            a {
+              .uiux {
+                font-size: 1.3rem;
+              }
+            }
+            .group-des {
+              line-height: 21px;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  #project {
+    height: 1020px;
+    .services {
+      width: 950px;
+      .services-heading {
+        .texts {
+          .span1 {
+            font-size: 12px;
+          }
+          .fs-5 {
+            font-size: 3.5rem;
+          }
+        }
+      }
+      .services-lists {
+        .groups {
+          .des {
+            padding: 20px 10px 20px 15px;
+            a {
+              .uiux {
+                font-size: 1.1rem;
+              }
+            }
+            .group-des {
+              line-height: 21px;
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  #project {
+    height: 900px;
+    .services {
+      width: 850px;
+      .services-heading {
+        .texts {
+          .span1 {
+            font-size: 11px;
+          }
+          .fs-5 {
+            font-size: 3rem;
+          }
+        }
+      }
+      .services-lists {
+        .groups {
+          .des {
+            padding: 15px 8px 15px 12px;
+            a {
+              .uiux {
+                font-size: 1rem;
+              }
+            }
+            .group-des {
+              line-height: 19px;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  #project {
+    height: 850px;
+    .services {
+      width: 750px;
+      .services-heading {
+        .texts {
+          .span1 {
+            font-size: 11px;
+          }
+          .fs-5 {
+            font-size: 2.8rem;
+          }
+        }
+      }
+      .services-lists {
+        .groups {
+          .des {
+            padding: 15px 8px 15px 12px;
+            a {
+              .uiux {
+                font-size: 0.9rem;
+              }
+            }
+            .group-des {
+              line-height: 17px;
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  #project {
+    height: fit-content;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    .services {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      .services-heading {
+        position: unset;
+        width: 100%;
+        .texts {
+          align-items: center;
+          .span1 {
+            font-size: 22px;
+          }
+          .span1::before {
+            width: 22px;
+            height: 12px;
+          }
+          .fs-5 {
+            font-size: 5rem;
+          }
+        }
+      }
+      .services-lists {
+        width: 96%;
+        .groups {
+          .des {
+            padding: 25px 10px 25px 15px;
+            a {
+              .uiux {
+                font-size: 1.5rem;
+              }
+            }
+            .group-des {
+              line-height: 25px;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  #project {
+    .services {
+      .services-heading {
+        .texts {
+          .span1 {
+            font-size: 18px;
+          }
+          .span1::before {
+            width: 18px;
+            height: 10px;
+          }
+          .fs-5 {
+            font-size: 4rem;
+          }
+        }
+      }
+      .services-lists {
+        .groups {
+          .des {
+            padding: 20px 10px 20px 15px;
+            a {
+              .uiux {
+                font-size: 1.3rem;
+              }
+            }
+            .group-des {
+              line-height: 21px;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  #project {
+    .services {
+      .services-heading {
+        .texts {
+          .span1 {
+            font-size: 16px;
+          }
+          .span1::before {
+            width: 16px;
+            height: 8.5px;
+          }
+          .fs-5 {
+            font-size: 3.5rem;
+          }
+        }
+      }
+      .services-lists {
+        .groups {
+          .des {
+            padding: 15px 8px 15px 10px;
+            a {
+              .uiux {
+                font-size: 1.1rem;
+              }
+            }
+            .group-des {
+              line-height: 19px;
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  #project {
+    .services {
+      .services-heading {
+        .texts {
+          .span1 {
+            font-size: 16px;
+          }
+          .span1::before {
+            width: 16px;
+            height: 8.5px;
+          }
+          .fs-5 {
+            font-size: 3.5rem;
+          }
+        }
+      }
+      .services-lists {
+        .groups {
+          .des {
+            padding: 15px 8px 15px 10px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            a {
+              .uiux {
+                font-size: 1.1rem;
+              }
+            }
+            .group-des {
+              line-height: 19px;
+              font-size: 0.9rem;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

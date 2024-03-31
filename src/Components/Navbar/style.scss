@@ -1,0 +1,148 @@
+@import "../../Sass/mixinss.scss";
+@import "../../Sass/variable.scss";
+.navbar {
+  height: 100px;
+  width: 100%;
+  background-color: $color-navbg;
+  padding: 5px 25px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  @include displayProperties(row, space-between, center);
+  & .logo {
+    & .dp {
+      height: 90px;
+      width: 90px;
+      border-radius: 100%;
+      cursor: pointer;
+      object-fit: cover;
+    }
+    & .profile {
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba($color: $color-white, $alpha: 0.5);
+      & .profile-dp {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 40%;
+        width: 40%;
+        object-fit: contain;
+      }
+    }
+  }
+  & .lists {
+    width: 48%;
+    @include displayProperties(row, space-between, center);
+    & .contact{
+      border: none;
+    }
+    & .contact:focus{
+      outline: none;
+    }
+    & a, .contact {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: $color-black;
+    }
+    & a:hover .contact:hover {
+      color: $color-blue;
+    }
+  }
+  & .social-media {
+    @include displayProperties(row, space-between, center);
+    & .social-icons {
+      height: 30px;
+      width: 30px;
+      margin-left: 20px;
+    }
+    & .social-icons:hover {
+      color: $color-blue;
+    }
+  }
+  & .menu {
+    display: none;
+  }
+  & .menuBar {
+    display: none;
+  }
+}
+
+@media only screen and (width<=800px) {
+  .navbar {
+    height: 80px;
+
+    & .social-media {
+      display: none;
+    }
+    & .lists {
+      display: none;
+    }
+    & .menu {
+      height: 20px;
+      @include displayProperties(column, space-between, center);
+      & div {
+        height: 3px;
+        width: 30px;
+        border: 1px solid;
+        background-color: $color-black;
+      }
+      & .first {
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        transform: rotate(55deg);
+        background-color: red;
+      }
+      & .second {
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        background-color: red;
+        transform: rotate(130deg);
+      }
+      & .third {
+        display: none;
+      }
+    }
+
+    & .logo {
+      & .dp {
+        height: 60px;
+        width: 60px;
+      }
+    }
+
+    & .menuBar {
+      display: block;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 40%;
+      height: calc(100vh - 80px);
+      background-color: $color-navbg;
+      @include displayProperties(column, flex-start, center);
+      & > .aBtn{
+        border: none;
+        text-align: justify;
+      }
+      & > a , .aBtn {
+        padding: 10px 10%;
+        text-decoration: none;
+        width: 100%;
+        font-size: 1.5rem;
+        color: $color-black;
+      }
+      & > a:hover , .aBtn:hover{
+        background-color: white;
+      }
+    }
+  }
+}
