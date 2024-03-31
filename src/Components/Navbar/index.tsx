@@ -12,7 +12,6 @@ export const Navbar: React.FC<NavbarProps> = () => {
   const [dp, setDp] = useState<boolean>(true);
   const [sideMenu, setSideMenu] = useState<boolean>(true);
 
-  const phoneNumber: string = "9696461519";
   const openProfile = (e: React.MouseEvent) => {
     setDp(false);
     console.log(dp);
@@ -31,14 +30,14 @@ export const Navbar: React.FC<NavbarProps> = () => {
   };
 
   const handleWhatsAppClick = (e: React.MouseEvent) => {
-    const isWhatsAppAvailable = /WhatsApp/.test(navigator.userAgent);
+   
+    const phoneNumber = "9696461519";
+    const message = "Hello!";
 
-    if (isWhatsAppAvailable) {
-      const whatsappUrl = `https://wa.me/${phoneNumber}`;
-      window.open(whatsappUrl, "_blank");
-    } else {
-      alert(`WhatsApp is not available. Please contact ${phoneNumber}`);
-    }
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.location.href = whatsappUrl;
     setSideMenu(!sideMenu);
     e.stopPropagation();
   };
@@ -81,7 +80,9 @@ export const Navbar: React.FC<NavbarProps> = () => {
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#project">Project</a>
-        <button className="contact" onClick={handleWhatsAppClick}>Contact me.</button>
+        <button className="contact" onClick={handleWhatsAppClick}>
+          Contact me.
+        </button>
       </div>
       <div className="social-media">
         <a href="https://github.com/shri214">
