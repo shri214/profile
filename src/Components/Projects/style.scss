@@ -2,7 +2,7 @@
 
 .our-service-container {
   background: url("../../assets/h-3.jpg") center/cover no-repeat;
-  height: 1150px;
+  height: fit-content;
   padding: 116px 0px 92px 0px;
 }
 .services {
@@ -132,7 +132,7 @@
 
 @media screen and (max-width: 1220px) {
   #project {
-    height: 1060px;
+    height: fit-content;
     .services {
       width: 1050px;
       .services-heading {
@@ -163,7 +163,6 @@
 }
 @media screen and (max-width: 1100px) {
   #project {
-    height: 1020px;
     .services {
       width: 950px;
       .services-heading {
@@ -197,7 +196,6 @@
 }
 @media screen and (max-width: 1000px) {
   #project {
-    height: 900px;
     .services {
       width: 850px;
       .services-heading {
@@ -231,7 +229,6 @@
 }
 @media screen and (max-width: 900px) {
   #project {
-    height: 850px;
     .services {
       width: 750px;
       .services-heading {
@@ -265,7 +262,6 @@
 }
 @media screen and (max-width: 800px) {
   #project {
-    height: fit-content;
     padding-top: 60px;
     padding-bottom: 20px;
     .services {
@@ -381,7 +377,7 @@
     }
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   #project {
     .services {
       .services-heading {

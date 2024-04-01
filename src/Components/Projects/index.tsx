@@ -34,9 +34,9 @@ export const Project = () => {
     },
     {
       num: "04",
-      ui: "EXCEL",
-      des: "I developed a JavaScript-based Excel clone, mirroring spreadsheet functionality. It employs JS for formulas, cell manipulation, and data organization. Crafting this honed my skills in data management and frontend development.",
-      link: "https://excel-8o919r4g8-shri214.vercel.app",
+      ui: "Movies",
+      des: "a dynamic movie website developed entirely using TypeScript and React! With TypeScript's static typing and React's component-based architecture, I've crafted a robust platform for film enthusiasts. This website boasts an array of features, including seamless navigation, personalized recommendations, advanced search filters, and real-time updates on the latest releases. Harnessing the power of TypeScript-React synergy, I've ensured a smooth and engaging user experience, making movie browsing and discovery a joy for every visitor.",
+      link: "https://movies-one-theta.vercel.app/",
     },
     {
       num: "05",

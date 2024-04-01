@@ -31,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
 
   const handleWhatsAppClick = (e: React.MouseEvent) => {
    
-    const phoneNumber = "9696461519";
+    const phoneNumber = "+919696461519";
     const message = "Hello!";
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -43,7 +43,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
   };
 
   useEffect(() => {
-    console.log("useeffect is running");
+    console.log("use effect is running");
     if (!sideMenu) {
       const func = () => {
         setSideMenu(true);
