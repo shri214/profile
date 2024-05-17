@@ -16,7 +16,7 @@ export const Project = () => {
     {
       num: "01",
       ui: "E-COMMERCE",
-      des: ` Developed an e-commerce website using HTML, CSS, and JavaScript. Implemented features like product listings, shopping cart, and user authentication. Utilized Local Storage for seamless sign up and login functionality, as well as storing cart item data`,
+      des: ` Developed an e-commerce website using React. Implemented features like product listings, shopping cart, and user authentication. Utilized Local Storage for seamless sign up and login functionality, as well as storing cart item data`,
       link: "https://react-e-commerce-lv87x4dy0-shri214.vercel.app",
     },
     {

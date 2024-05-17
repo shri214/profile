@@ -9,13 +9,11 @@
   padding-top: 10px;
   & h1 {
     font-size: 6rem;
-    line-height: 2rem;
-    text-align: center;
-    height: 130px;
-    font-family: gustera;
+    height: 140px;
     background: -webkit-linear-gradient(left, #2b42e9, #755efc, white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @include displayProperties(row, center, center);
   }
   & .rows {
     @include displayProperties(row, space-between, flex-start);
